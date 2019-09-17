@@ -1,0 +1,229 @@
+// 顶部加载进度条
+#nprogress {
+  div.bar {
+    background: #66ccff;
+    box-shadow: 0 0 10px #66ccff;
+  }
+}
+
+// 弹框
+.el-dialog__body {
+  padding: 10px;
+}
+
+.el-dialog__header {
+  padding: 10px;
+  background: #1A87B3;
+  color: #fff;
+}
+
+.el-dialog__title {
+  color: #fff;
+  font-size: 16px;
+}
+
+.el-dialog__headerbtn .el-dialog__close {
+  color: #fff;
+  position: relative;
+  bottom: 5px;
+}
+
+/* 模块切换动画 */
+.fade-transform-leave-active,
+.fade-transform-enter-active {
+  transition: all 0.5s;
+}
+
+.fade-transform-enter {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+.fade-transform-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+/* 面包屑切换动画 */
+.breadcrumb-enter-active,
+.breadcrumb-leave-active {
+  transition: all 0.5s;
+}
+
+.breadcrumb-enter,
+.breadcrumb-leave-active {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.breadcrumb-move {
+  transition: all 0.5s;
+}
+
+.breadcrumb-leave-active {
+  position: absolute;
+}
+
+// 图表卡片
+.chart-card {
+  position: relative;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+  .chart-select {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+  }
+}
+
+// 表格卡片
+.table-card {
+  border-radius: 0px;
+  border-color: #e0dcdc;
+
+  .el-card__header {
+    border-color: #a5d9f1;
+    background-color: #a5d9f1;
+  }
+
+  .el-card__body {
+    padding: 0 20px 20px 20px;
+  }
+  .card-title {
+    color: #7b7b7b;
+    cursor: unset;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .card-title-icon {
+    width: 30px;
+    height: 30px;
+    float: left;
+    position: relative;
+    bottom: 5px;
+    margin: 0 5px 0 0;
+  }
+
+  .content {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+// 滚动表格
+.scroll-table-thead {
+  height: 44px;
+  line-height: 44px;
+  display: flex;
+  font-weight: bold;
+  font-size: 14px;
+  color: #909399;
+  border-bottom: 1px solid #EBEEF5;
+}
+
+.scroll-table-tbody {
+  flex: 1;
+  overflow: hidden;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    display: flex;
+    height: 44px;
+    line-height: 44px;
+    font-size: 14px;
+    color: #606266;
+    border-bottom: 1px solid #EBEEF5;
+  }
+
+  li:nth-child(even) {
+    background-color: #FAFAFA;
+  }
+}
+
+// 数字卡片
+.number-card {
+  display: flex;
+
+  >div {
+    height: 100px;
+    display: flex;
+    color: #fff;
+
+    i {
+      margin: 20px;
+    }
+
+    .right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      small {
+        font-size: 14px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 300;
+        margin: 5px 0 5px;
+      }
+
+      h2 {
+        margin: 0;
+        font-family: Roboto, Arial, sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+      }
+
+      .unit {
+        font-size: 22px;
+        position: relative;
+        bottom: 2px;
+      }
+    }
+  }
+}
+
+// 卡片标题竖杆
+.arrow {
+  width: 4px;
+  float: left;
+  height: 23px;
+  margin: 0 8px 0 0;
+  background-color: #0085ee;
+}
+
+// 文字溢出
+.text-over {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+// 暂无数据
+.no-data {
+  height: 100%;
+  display: flex;
+  font-size: 14px;
+  color: #909399;
+  align-items: center;
+  justify-content: center;
+}
+
+// 搜索栏
+.search-bar {
+  .el-form--inline .el-form-item {
+    margin: 10px;
+  }
+}
+// 分页
+.el-pagination {
+  margin: 10px 0 0 0;
+  text-align: right;
+}
