@@ -22,3 +22,118 @@
 2019-09-17 15:59:41.878 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - ==>  Preparing: select distinct t4.fid "id",t4.pid "parentId",t4.name "name",t4.component "component",t4.code "code",t4.target "target" from USER_ROLE t1 left join ROLE t2 on t1.role_id = t2.fid left join ROLE_MENU t3 on t2.fid = t3.role_id left join MENU t4 on t3.menu_id = t4.fid where t1.user_id = ? and t2.status = 1 and t4.status = 1 
 2019-09-17 15:59:41.879 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - ==> Parameters: 1(String)
 2019-09-17 15:59:41.915 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - <==      Total: 1
+2019-09-17 16:40:18.902 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - ==>  Preparing: select * from USER WHERE account = ? and password = ? 
+2019-09-17 16:40:18.905 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - ==> Parameters: fjs001(String), c4ca4238a0b923820dcc509a6f75849b(String)
+2019-09-17 16:40:18.953 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - <==      Total: 1
+2019-09-17 16:40:18.964 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - ==>  Preparing: select distinct t4.fid "id",t4.pid "parentId",t4.name "name",t4.component "component",t4.code "code",t4.target "target" from USER_ROLE t1 left join ROLE t2 on t1.role_id = t2.fid left join ROLE_MENU t3 on t2.fid = t3.role_id left join MENU t4 on t3.menu_id = t4.fid where t1.user_id = ? and t2.status = 1 and t4.status = 1 
+2019-09-17 16:40:18.964 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - ==> Parameters: 1(String)
+2019-09-17 16:40:18.999 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - <==      Total: 1
+2019-09-17 17:15:46.273 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin_COUNT Line:159 - ==>  Preparing: SELECT count(0) FROM USER WHERE account = ? AND password = ? 
+2019-09-17 17:15:46.273 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin_COUNT Line:159 - ==> Parameters: fjs001(String), c4ca4238a0b923820dcc509a6f75849b(String)
+2019-09-17 17:15:46.304 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin_COUNT Line:159 - <==      Total: 1
+2019-09-17 17:15:46.306 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - ==>  Preparing: SELECT * FROM USER WHERE account = ? AND password = ? order by mon_time desc LIMIT ? 
+2019-09-17 17:15:46.307 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - ==> Parameters: fjs001(String), c4ca4238a0b923820dcc509a6f75849b(String), 10(Integer)
+2019-09-17 17:16:22.997 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - ==>  Preparing: select * from USER WHERE account = ? and password = ? 
+2019-09-17 17:16:22.997 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - ==> Parameters: fjs001(String), c4ca4238a0b923820dcc509a6f75849b(String)
+2019-09-17 17:16:23.027 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - <==      Total: 1
+2019-09-17 17:16:23.037 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - ==>  Preparing: select distinct t4.fid "id",t4.pid "parentId",t4.name "name",t4.component "component",t4.code "code",t4.target "target" from USER_ROLE t1 left join ROLE t2 on t1.role_id = t2.fid left join ROLE_MENU t3 on t2.fid = t3.role_id left join MENU t4 on t3.menu_id = t4.fid where t1.user_id = ? and t2.status = 1 and t4.status = 1 
+2019-09-17 17:16:23.038 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - ==> Parameters: 1(String)
+2019-09-17 17:16:23.068 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - <==      Total: 1
+2019-09-17 17:20:23.804 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - ==>  Preparing: select * from USER WHERE account = ? and password = ? 
+2019-09-17 17:20:23.805 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - ==> Parameters: fjs001(String), c4ca4238a0b923820dcc509a6f75849b(String)
+2019-09-17 17:20:23.839 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - <==      Total: 1
+2019-09-17 17:20:23.848 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - ==>  Preparing: select distinct t4.fid "id",t4.pid "parentId",t4.name "name",t4.component "component",t4.code "code",t4.target "target" from USER_ROLE t1 left join ROLE t2 on t1.role_id = t2.fid left join ROLE_MENU t3 on t2.fid = t3.role_id left join MENU t4 on t3.menu_id = t4.fid where t1.user_id = ? and t2.status = 1 and t4.status = 1 
+2019-09-17 17:20:23.848 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - ==> Parameters: 1(String)
+2019-09-17 17:20:23.878 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - <==      Total: 1
+2019-09-17 17:22:49.323 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - ==>  Preparing: select * from USER WHERE account = ? and password = ? 
+2019-09-17 17:22:49.324 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - ==> Parameters: fjs001(String), c4ca4238a0b923820dcc509a6f75849b(String)
+2019-09-17 17:22:49.364 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - <==      Total: 1
+2019-09-17 17:22:49.381 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - ==>  Preparing: select distinct t4.fid "id",t4.pid "parentId",t4.name "name",t4.component "component",t4.code "code",t4.target "target" from USER_ROLE t1 left join ROLE t2 on t1.role_id = t2.fid left join ROLE_MENU t3 on t2.fid = t3.role_id left join MENU t4 on t3.menu_id = t4.fid where t1.user_id = ? and t2.status = 1 and t4.status = 1 
+2019-09-17 17:22:49.382 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - ==> Parameters: 1(String)
+2019-09-17 17:22:49.413 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - <==      Total: 1
+2019-09-17 17:29:49.662 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - ==>  Preparing: select * from USER WHERE account = ? and password = ? 
+2019-09-17 17:29:49.662 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - ==> Parameters: fjs001(String), c4ca4238a0b923820dcc509a6f75849b(String)
+2019-09-17 17:29:49.702 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - <==      Total: 1
+2019-09-17 17:29:49.710 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - ==>  Preparing: select distinct t4.fid "id",t4.pid "parentId",t4.name "name",t4.component "component",t4.code "code",t4.target "target" from USER_ROLE t1 left join ROLE t2 on t1.role_id = t2.fid left join ROLE_MENU t3 on t2.fid = t3.role_id left join MENU t4 on t3.menu_id = t4.fid where t1.user_id = ? and t2.status = 1 and t4.status = 1 
+2019-09-17 17:29:49.711 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - ==> Parameters: 1(String)
+2019-09-17 17:29:49.752 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - <==      Total: 1
+2019-09-17 17:30:23.004 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - ==>  Preparing: select * from USER WHERE account = ? and password = ? 
+2019-09-17 17:30:23.005 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - ==> Parameters: fjs001(String), c4ca4238a0b923820dcc509a6f75849b(String)
+2019-09-17 17:30:23.045 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - <==      Total: 1
+2019-09-17 17:30:23.062 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu_COUNT Line:159 - ==>  Preparing: SELECT count(0) FROM (SELECT DISTINCT t4.fid "id", t4.pid "parentId", t4.name "name", t4.component "component", t4.code "code", t4.target "target" FROM USER_ROLE t1 LEFT JOIN ROLE t2 ON t1.role_id = t2.fid LEFT JOIN ROLE_MENU t3 ON t2.fid = t3.role_id LEFT JOIN MENU t4 ON t3.menu_id = t4.fid WHERE t1.user_id = ? AND t2.status = 1 AND t4.status = 1) table_count 
+2019-09-17 17:30:23.062 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu_COUNT Line:159 - ==> Parameters: 1(String)
+2019-09-17 17:30:23.094 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu_COUNT Line:159 - <==      Total: 1
+2019-09-17 17:30:23.097 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - ==>  Preparing: SELECT DISTINCT t4.fid "id", t4.pid "parentId", t4.name "name", t4.component "component", t4.code "code", t4.target "target" FROM USER_ROLE t1 LEFT JOIN ROLE t2 ON t1.role_id = t2.fid LEFT JOIN ROLE_MENU t3 ON t2.fid = t3.role_id LEFT JOIN MENU t4 ON t3.menu_id = t4.fid WHERE t1.user_id = ? AND t2.status = 1 AND t4.status = 1 order by mon_time desc LIMIT ? 
+2019-09-17 17:30:23.097 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - ==> Parameters: 1(String), 10(Integer)
+2019-09-17 17:30:25.594 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - ==>  Preparing: select * from USER WHERE account = ? and password = ? 
+2019-09-17 17:30:25.595 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - ==> Parameters: fjs001(String), c4ca4238a0b923820dcc509a6f75849b(String)
+2019-09-17 17:30:25.635 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - <==      Total: 1
+2019-09-17 17:30:25.643 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - ==>  Preparing: select distinct t4.fid "id",t4.pid "parentId",t4.name "name",t4.component "component",t4.code "code",t4.target "target" from USER_ROLE t1 left join ROLE t2 on t1.role_id = t2.fid left join ROLE_MENU t3 on t2.fid = t3.role_id left join MENU t4 on t3.menu_id = t4.fid where t1.user_id = ? and t2.status = 1 and t4.status = 1 
+2019-09-17 17:30:25.644 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - ==> Parameters: 1(String)
+2019-09-17 17:30:25.674 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - <==      Total: 1
+2019-09-17 17:31:55.560 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - ==>  Preparing: select * from USER WHERE account = ? and password = ? 
+2019-09-17 17:31:55.560 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - ==> Parameters: fjs001(String), c4ca4238a0b923820dcc509a6f75849b(String)
+2019-09-17 17:31:55.601 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - <==      Total: 1
+2019-09-17 17:31:55.608 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - ==>  Preparing: select distinct t4.fid "id",t4.pid "parentId",t4.name "name",t4.component "component",t4.code "code",t4.target "target" from USER_ROLE t1 left join ROLE t2 on t1.role_id = t2.fid left join ROLE_MENU t3 on t2.fid = t3.role_id left join MENU t4 on t3.menu_id = t4.fid where t1.user_id = ? and t2.status = 1 and t4.status = 1 
+2019-09-17 17:31:55.609 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - ==> Parameters: 1(String)
+2019-09-17 17:31:55.651 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - <==      Total: 1
+2019-09-17 17:33:59.069 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - ==>  Preparing: select * from USER WHERE account = ? and password = ? 
+2019-09-17 17:33:59.070 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - ==> Parameters: fjs001(String), c4ca4238a0b923820dcc509a6f75849b(String)
+2019-09-17 17:33:59.120 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - <==      Total: 1
+2019-09-17 17:33:59.127 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - ==>  Preparing: select distinct t4.fid "id",t4.pid "parentId",t4.name "name",t4.component "component",t4.code "code",t4.target "target" from USER_ROLE t1 left join ROLE t2 on t1.role_id = t2.fid left join ROLE_MENU t3 on t2.fid = t3.role_id left join MENU t4 on t3.menu_id = t4.fid where t1.user_id = ? and t2.status = 1 and t4.status = 1 
+2019-09-17 17:33:59.128 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - ==> Parameters: 1(String)
+2019-09-17 17:33:59.180 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - <==      Total: 1
+2019-09-17 17:35:59.951 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - ==>  Preparing: select * from USER WHERE account = ? and password = ? 
+2019-09-17 17:35:59.951 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - ==> Parameters: fjs001(String), c4ca4238a0b923820dcc509a6f75849b(String)
+2019-09-17 17:35:59.980 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - <==      Total: 1
+2019-09-17 17:35:59.991 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - ==>  Preparing: select distinct t4.fid "id",t4.pid "parentId",t4.name "name",t4.component "component",t4.code "code",t4.target "target" from USER_ROLE t1 left join ROLE t2 on t1.role_id = t2.fid left join ROLE_MENU t3 on t2.fid = t3.role_id left join MENU t4 on t3.menu_id = t4.fid where t1.user_id = ? and t2.status = 1 and t4.status = 1 
+2019-09-17 17:35:59.991 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - ==> Parameters: 1(String)
+2019-09-17 17:36:00.021 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - <==      Total: 1
+2019-09-17 17:37:04.245 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - ==>  Preparing: select * from USER WHERE account = ? and password = ? 
+2019-09-17 17:37:04.246 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - ==> Parameters: fjs001(String), c4ca4238a0b923820dcc509a6f75849b(String)
+2019-09-17 17:37:04.281 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - <==      Total: 1
+2019-09-17 17:37:04.291 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - ==>  Preparing: select distinct t4.fid "id",t4.pid "parentId",t4.name "name",t4.component "component",t4.code "code",t4.target "target" from USER_ROLE t1 left join ROLE t2 on t1.role_id = t2.fid left join ROLE_MENU t3 on t2.fid = t3.role_id left join MENU t4 on t3.menu_id = t4.fid where t1.user_id = ? and t2.status = 1 and t4.status = 1 
+2019-09-17 17:37:04.292 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - ==> Parameters: 1(String)
+2019-09-17 17:37:04.331 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - <==      Total: 1
+2019-09-17 17:37:50.355 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - ==>  Preparing: select * from USER WHERE account = ? and password = ? 
+2019-09-17 17:37:50.356 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - ==> Parameters: fjs001(String), c4ca4238a0b923820dcc509a6f75849b(String)
+2019-09-17 17:37:50.395 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - <==      Total: 1
+2019-09-17 17:37:50.404 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - ==>  Preparing: select distinct t4.fid "id",t4.pid "parentId",t4.name "name",t4.component "component",t4.code "code",t4.target "target" from USER_ROLE t1 left join ROLE t2 on t1.role_id = t2.fid left join ROLE_MENU t3 on t2.fid = t3.role_id left join MENU t4 on t3.menu_id = t4.fid where t1.user_id = ? and t2.status = 1 and t4.status = 1 
+2019-09-17 17:37:50.405 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - ==> Parameters: 1(String)
+2019-09-17 17:37:50.435 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - <==      Total: 1
+2019-09-17 17:38:27.872 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - ==>  Preparing: select * from USER WHERE account = ? and password = ? 
+2019-09-17 17:38:27.873 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - ==> Parameters: fjs001(String), c4ca4238a0b923820dcc509a6f75849b(String)
+2019-09-17 17:38:27.903 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - <==      Total: 1
+2019-09-17 17:38:27.910 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - ==>  Preparing: select distinct t4.fid "id",t4.pid "parentId",t4.name "name",t4.component "component",t4.code "code",t4.target "target" from USER_ROLE t1 left join ROLE t2 on t1.role_id = t2.fid left join ROLE_MENU t3 on t2.fid = t3.role_id left join MENU t4 on t3.menu_id = t4.fid where t1.user_id = ? and t2.status = 1 and t4.status = 1 
+2019-09-17 17:38:27.911 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - ==> Parameters: 1(String)
+2019-09-17 17:38:27.941 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - <==      Total: 1
+2019-09-17 17:49:27.192 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - ==>  Preparing: select * from USER WHERE account = ? and password = ? 
+2019-09-17 17:49:27.192 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - ==> Parameters: fjs001(String), c4ca4238a0b923820dcc509a6f75849b(String)
+2019-09-17 17:49:27.233 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - <==      Total: 1
+2019-09-17 17:49:27.241 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - ==>  Preparing: select distinct t4.fid "id",t4.pid "parentId",t4.name "name",t4.component "component",t4.code "code",t4.target "target" from USER_ROLE t1 left join ROLE t2 on t1.role_id = t2.fid left join ROLE_MENU t3 on t2.fid = t3.role_id left join MENU t4 on t3.menu_id = t4.fid where t1.user_id = ? and t2.status = 1 and t4.status = 1 
+2019-09-17 17:49:27.241 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - ==> Parameters: 1(String)
+2019-09-17 17:49:27.283 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - <==      Total: 1
+2019-09-17 17:49:53.023 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - ==>  Preparing: select * from USER WHERE account = ? and password = ? 
+2019-09-17 17:49:53.024 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - ==> Parameters: fjs001(String), c4ca4238a0b923820dcc509a6f75849b(String)
+2019-09-17 17:49:53.056 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - <==      Total: 1
+2019-09-17 17:49:53.066 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - ==>  Preparing: select distinct t4.fid "id",t4.pid "parentId",t4.name "name",t4.component "component",t4.code "code",t4.target "target" from USER_ROLE t1 left join ROLE t2 on t1.role_id = t2.fid left join ROLE_MENU t3 on t2.fid = t3.role_id left join MENU t4 on t3.menu_id = t4.fid where t1.user_id = ? and t2.status = 1 and t4.status = 1 
+2019-09-17 17:49:53.067 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - ==> Parameters: 1(String)
+2019-09-17 17:49:53.104 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - <==      Total: 1
+2019-09-17 17:52:03.542 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - ==>  Preparing: select * from USER WHERE account = ? and password = ? 
+2019-09-17 17:52:03.542 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - ==> Parameters: fjs001(String), c4ca4238a0b923820dcc509a6f75849b(String)
+2019-09-17 17:52:03.582 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - <==      Total: 1
+2019-09-17 17:52:03.590 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - ==>  Preparing: select distinct t4.fid "id",t4.pid "parentId",t4.name "name",t4.component "component",t4.code "code",t4.target "target" from USER_ROLE t1 left join ROLE t2 on t1.role_id = t2.fid left join ROLE_MENU t3 on t2.fid = t3.role_id left join MENU t4 on t3.menu_id = t4.fid where t1.user_id = ? and t2.status = 1 and t4.status = 1 
+2019-09-17 17:52:03.591 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - ==> Parameters: 1(String)
+2019-09-17 17:52:03.632 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - <==      Total: 1
+2019-09-17 17:53:30.988 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - ==>  Preparing: select * from USER WHERE account = ? and password = ? 
+2019-09-17 17:53:30.988 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - ==> Parameters: fjs001(String), c4ca4238a0b923820dcc509a6f75849b(String)
+2019-09-17 17:53:31.028 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - <==      Total: 1
+2019-09-17 17:53:31.038 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - ==>  Preparing: select distinct t4.fid "id",t4.pid "parentId",t4.name "name",t4.component "component",t4.code "code",t4.target "target" from USER_ROLE t1 left join ROLE t2 on t1.role_id = t2.fid left join ROLE_MENU t3 on t2.fid = t3.role_id left join MENU t4 on t3.menu_id = t4.fid where t1.user_id = ? and t2.status = 1 and t4.status = 1 
+2019-09-17 17:53:31.038 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - ==> Parameters: 1(String)
+2019-09-17 17:53:31.078 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - <==      Total: 1
+2019-09-17 17:55:02.065 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - ==>  Preparing: select * from USER WHERE account = ? and password = ? 
+2019-09-17 17:55:02.066 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - ==> Parameters: fjs001(String), c4ca4238a0b923820dcc509a6f75849b(String)
+2019-09-17 17:55:02.096 DEBUG com.lxjj.wo.dao.UserMapper.queryUserByLogin Line:159 - <==      Total: 1
+2019-09-17 17:55:02.105 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - ==>  Preparing: select distinct t4.fid "id",t4.pid "parentId",t4.name "name",t4.component "component",t4.code "code",t4.target "target" from USER_ROLE t1 left join ROLE t2 on t1.role_id = t2.fid left join ROLE_MENU t3 on t2.fid = t3.role_id left join MENU t4 on t3.menu_id = t4.fid where t1.user_id = ? and t2.status = 1 and t4.status = 1 
+2019-09-17 17:55:02.105 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - ==> Parameters: 1(String)
+2019-09-17 17:55:02.134 DEBUG com.lxjj.wo.dao.MenuMapper.userMenu Line:159 - <==      Total: 1

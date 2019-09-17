@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1a4f322-f1eb-4b00-b6a1-d0c9c1e78089" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wo-startup/src/main/java/com/lxjj/wo/config/WebMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/debug/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/debug/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wo-dao/src/main/resources/mapper/MenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wo-dao/src/main/resources/mapper/MenuMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wo-dao/target/classes/mapper/MenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wo-dao/target/classes/mapper/MenuMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wo-startup/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/wo-startup/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wo-startup/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wo-startup/src/main/resources/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wo-startup/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/wo-startup/target/classes/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wo-startup/target/classes/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wo-startup/target/classes/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webOnline-web/src/views/report-sale-condition.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../webOnline-web/src/views/report-sale-condition.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -98,8 +89,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wo-startup/src/main/resources/logback.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="68" column="15" selection-start-line="68" selection-start-column="15" selection-end-line="68" selection-end-column="15" />
+            <state relative-caret-position="689">
+              <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
             </state>
           </provider>
         </entry>
@@ -346,7 +337,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -472,7 +463,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-7" />
+    <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -549,6 +540,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webOnline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webOnline" type="462c0819:PsiDirectoryNode" />
+              <item name="wo-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="webOnline" type="b2602c69:ProjectViewProjectNode" />
@@ -761,12 +761,12 @@
       <updated>1568255474118</updated>
       <workItem from="1568255475356" duration="4895000" />
       <workItem from="1568597276741" duration="11001000" />
-      <workItem from="1568619670345" duration="10904000" />
+      <workItem from="1568619670345" duration="13080000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26800000" />
+    <option name="totallyTimeSpent" value="28976000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
@@ -783,7 +783,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.16901408" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.20932755" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.23101953" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -1243,8 +1243,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wo-startup/src/main/resources/logback.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="68" column="15" selection-start-line="68" selection-start-column="15" selection-end-line="68" selection-end-column="15" />
+        <state relative-caret-position="689">
+          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
         </state>
       </provider>
     </entry>
