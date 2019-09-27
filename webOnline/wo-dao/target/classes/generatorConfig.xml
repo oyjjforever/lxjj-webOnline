@@ -24,11 +24,11 @@
      <property name="constructorBased" value="true"/>
     </javaModelGenerator>
 
-	<!-- 生成xxxMapper.xml的位置-->
-    <sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources"/>
-    <!-- 生成xxxMapper.java的位置-->
-    <javaClientGenerator type="XMLMAPPER" targetPackage="com.lxjj.wo.dao" targetProject="src/main/java"/>
-	<!-- tableName="%" 表示数据库中所有表都参与（默认规则：table_demo——>TableDemo）-->
+<!--	&lt;!&ndash; 生成xxxMapper.xml的位置&ndash;&gt;-->
+<!--    <sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources"/>-->
+<!--    &lt;!&ndash; 生成xxxMapper.java的位置&ndash;&gt;-->
+<!--    <javaClientGenerator type="XMLMAPPER" targetPackage="com.lxjj.wo.dao" targetProject="src/main/java"/>-->
+<!--	&lt;!&ndash; tableName="%" 表示数据库中所有表都参与（默认规则：table_demo——>TableDemo）&ndash;&gt;-->
 
 	<!--1 user -->
 	<table tableName="GOODS"

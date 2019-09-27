@@ -22,4 +22,7 @@
       <arg column="remarks" javaType="java.lang.String" jdbcType="LONGVARCHAR" />
     </constructor>
   </resultMap>
+  <select id="query" resultType="map">
+    select * from GOODS
+  </select>
 </mapper>

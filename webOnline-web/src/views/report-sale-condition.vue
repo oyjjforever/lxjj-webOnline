@@ -136,38 +136,63 @@ export default {
   methods: {
     initIssueNumByBillChart () {
       let option = {
-        tooltip: {
-          trigger: 'item',
-          formatter: '{b} : {c} 份 ({d}%)'
-        },
         legend: {
-          orient: 'vertical',
-          x: 'left'
+          bottom: 10,
+          data: ['下发数量', '下发平均耗时']
+        },
+        tooltip: {
+          trigger: 'axis',
+          axisPointer: {
+            type: 'shadow'
+          }
         },
         calculable: true,
-        series: [
+        xAxis: [
           {
-            name: '票据类型',
-            type: 'pie',
-            radius: '70%',
-            center: ['50%', '60%'],
-            label: {
-              normal: {
-                show: true,
-                position: 'left',
-                formatter: '{d}%',
-
-                textStyle: {
-                  align: 'center',
-                  baseline: 'middle',
-                  fontFamily: '微软雅黑',
-                  fontSize: 15,
-                  fontWeight: 'bolder'
-                }
-              }
+            type: 'category',
+            data: ['8:00', '9:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00', '20:00', '21:00', '22:00', '23:00', '00:00', '1:00', '2:00', '3:00', '4:00', '5:00', '6:00', '7:00']
+          }
+        ],
+        yAxis: [
+          {
+            type: 'value',
+            name: '下发数量',
+            min: 0,
+            max: 180,
+            interval: 30,
+            axisLabel: {
+              formatter: '{value}'
+            }
+          },
+          {
+            type: 'value',
+            name: '平均耗时',
+            min: 0,
+            max: 30,
+            interval: 5,
+            axisLabel: {
+              formatter: '{value} ms'
             }
           }
-        ]
+        ],
+        series: [
+          {
+            name: '下发数量',
+            type: 'bar',
+            color: '#2045B3'
+          },
+          {
+            name: '下发平均耗时',
+            type: 'line',
+            color: '#397ed8',
+            yAxisIndex: 1
+          }
+        ],
+        grid: {
+          x: 50, // 左边界距离
+          x2: 50, // 右边界距离
+          y: 40
+        }
       }
       let chart1 = echarts.init(this.$el.querySelector('#saleConditionStatement1'))
       chart1.setOption(option)
@@ -181,45 +206,16 @@ export default {
       this.setIssueNumByBillChartData()
     },
     setIssueNumByBillChartData (orgName) {
-      var orgBill = {}
-      if (orgName === 6) {
-        orgBill = {
-          legendData: ['医疗门诊收费票据', '医疗住院收费票据', '捐赠票据', '单位资金往来数据'],
-          data: [
-            { value: 335, name: '医疗门诊收费票据' },
-            { value: 310, name: '医疗住院收费票据' },
-            { value: 234, name: '捐赠票据' },
-            { value: 1548, name: '单位资金往来数据' }
-          ]
-        }
-      } else if (orgName === 7) {
-        orgBill = {
-          legendData: ['医疗住院收费票据', '捐赠票据', '单位资金往来数据'],
-          data: [
-            { value: 1310, name: '医疗住院收费票据' },
-            { value: 234, name: '捐赠票据' },
-            { value: 546, name: '单位资金往来数据' }
-          ]
-        }
-      } else {
-        orgBill = {
-          legendData: ['电子票据', '医疗票据', '医疗住院收费票据', '捐赠票据', '单位资金往来数据'],
-          data: [
-            { value: 810, name: '电子票据' },
-            { value: 510, name: '医疗票据' },
-            { value: 1310, name: '医疗住院收费票据' },
-            { value: 234, name: '捐赠票据' },
-            { value: 546, name: '单位资金往来数据' }
-          ]
-        }
-      }
-      this.chartInstances['saleConditionStatement1'].setOption({
-        legend: {
-          data: orgBill.legendData
-        },
-        series: {
-          data: orgBill.data
-        }
+      let chart = this.chartInstances['saleConditionStatement1']
+      chart.setOption({
+        series: [
+          {
+            data: [2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3]
+          },
+          {
+            data: [2.0, 2.2, 3.3, 4.5, 6.3, 10.2, 20.3, 23.4, 23.0, 16.5, 12.0, 6.2]
+          }
+        ]
       })
     }
   }

@@ -1,8 +1,9 @@
 package com.lxjj.wo.entity;
 
 import java.util.Date;
+import java.util.List;
 
-public class OrderMain {
+public class Order {
     private String fid;
 
     private String cname;
@@ -27,22 +28,9 @@ public class OrderMain {
 
     private String remarks;
 
-    public OrderMain(String fid, String cname, String cphone, String caddress, Date sendTime, String status, Date createTime, String createPerson, Date updateTime, String updatePerson, String version, String remarks) {
-        this.fid = fid;
-        this.cname = cname;
-        this.cphone = cphone;
-        this.caddress = caddress;
-        this.sendTime = sendTime;
-        this.status = status;
-        this.createTime = createTime;
-        this.createPerson = createPerson;
-        this.updateTime = updateTime;
-        this.updatePerson = updatePerson;
-        this.version = version;
-        this.remarks = remarks;
-    }
+    private List<OrderLine> orderLines;
 
-    public OrderMain() {
+    public Order() {
         super();
     }
 
@@ -212,5 +200,13 @@ public class OrderMain {
      */
     public void setRemarks(String remarks) {
         this.remarks = remarks;
+    }
+
+    public List<OrderLine> getOrderLines() {
+        return orderLines;
+    }
+
+    public void setOrderLines(List<OrderLine> orderLines) {
+        this.orderLines = orderLines;
     }
 }

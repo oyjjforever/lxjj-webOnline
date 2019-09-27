@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.lxjj.wo.dao.OrderMainMapper">
-  <resultMap id="BaseResultMap" type="com.lxjj.wo.entity.OrderMain">
+  <resultMap id="BaseResultMap" type="com.lxjj.wo.entity.Order">
     <!--
       WARNING - @mbg.generated
     -->
@@ -20,4 +20,43 @@
       <arg column="remarks" javaType="java.lang.String" jdbcType="LONGVARCHAR" />
     </constructor>
   </resultMap>
+  <resultMap id="selectMap" type="com.lxjj.wo.entity.Order">
+      <id column="fid" property="fid" jdbcType="VARCHAR" />
+      <result column="cname" property="cname" jdbcType="VARCHAR" />
+      <result column="cphone" property="cphone" jdbcType="VARCHAR" />
+      <result column="caddress" property="caddress" jdbcType="VARCHAR" />
+      <result column="send_time" property="sendTime" jdbcType="TIMESTAMP" />
+      <result column="status" property="status" jdbcType="VARCHAR" />
+      <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+      <result column="create_person" property="createPerson" jdbcType="VARCHAR" />
+      <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+      <result column="update_person" property="updatePerson" jdbcType="VARCHAR" />
+      <result column="version" property="version" jdbcType="VARCHAR" />
+      <result column="remarks" property="remarks" jdbcType="LONGVARCHAR" />
+      <collection property="orderLines" ofType="com.lxjj.wo.entity.OrderLine">
+          <id column="lfid" property="fid" jdbcType="VARCHAR" />
+          <result column="order_id" property="orderId" jdbcType="VARCHAR" />
+          <result column="good_id" property="goodId" jdbcType="VARCHAR" />
+          <result column="price" property="price" jdbcType="DOUBLE" />
+          <result column="num" property="num" jdbcType="DOUBLE" />
+          <result column="lstatus" property="status" jdbcType="VARCHAR" />
+          <result column="lcreate_time" property="createTime" jdbcType="TIMESTAMP" />
+          <result column="lcreate_person" property="createPerson" jdbcType="VARCHAR" />
+          <result column="lupdate_time" property="updateTime" jdbcType="TIMESTAMP" />
+          <result column="lupdate_person" property="updatePerson" jdbcType="VARCHAR" />
+          <result column="lversion" property="version" jdbcType="VARCHAR" />
+          <result column="lremarks" property="remarks" jdbcType="LONGVARCHAR" />
+      </collection>
+  </resultMap>
+    <select id="query" resultMap="selectMap">
+        select m.*,
+        l.fid lfid,
+        l.order_id,l.good_id,l.price,l.num,
+        l.status lstatus,l.create_time lcreate_time,
+        l.create_person lcreate_person,l.update_time lupdate_time,
+        l.update_person lupdate_person,l.version lversion,l.remarks lremarks
+        from ORDER_MAIN m
+        LEFT JOIN ORDER_LINE l
+        ON m.fid = l.order_id
+    </select>
 </mapper>
